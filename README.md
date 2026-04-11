@@ -1,2 +1,2 @@
 # octalink-web
-This repo host the files for my personal website
+This host the files for my website. Gotta init branch first :p
