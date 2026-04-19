@@ -1,2 +1,2 @@
 # Octalink's Website
-This host the files for my website. Gotta init branch first :p
+For this version only the Home page exists. Th e rest will come with futur updates :P
