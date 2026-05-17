@@ -157,10 +157,12 @@ footer {
 
 
 
-@media (max-width: 900){
+@media (max-width: 992px){
+
     .title h1 {
+        color: red;
         text-align: center;
         justify-content: center;
-        font-size: 400%;
+        font-size: 200%;
     }
 }
