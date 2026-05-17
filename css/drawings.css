@@ -157,12 +157,12 @@ footer {
 
 
 
-@media (max-width: 400px){
+@media only screen and (max-width: 992px){
 
     .title h1 {
         color: blue;
         text-align: center;
         justify-content: center;
-        font-size: 300%;
+        font-size: 200%;
     }
 }
