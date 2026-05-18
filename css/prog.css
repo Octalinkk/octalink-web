@@ -134,26 +134,45 @@ footer {
 .gallery {
     padding: 5px;
     display: flex;
-    flex-wrap: wrap; 
     flex-direction: column;
     gap: 15px;
+    align-items: center;
     justify-content: center;
     height: auto;
 }
 
-.gallery .img-card {
-    border-radius: 100px;
-    width: 300px;
+.gallery .prog-item{
+    color: #eee;
+    width: 700px;
     height: 300px;
-    box-shadow: 3px 3px 3px #2d2a35;
-    overflow: hidden;
+    background-color: #2d2a35;
+    border-radius: 50px;
+    padding: 50px;
+}
+.prog-item a{
+    text-decoration: none;
+    color: #eee;
+}
+.prog-item .prog-header {
+    font-size: 50px;
+    margin: 0;
+}
+.prog-header .prog-title i{
+    font-size: 20px;
 }
 
-.img-card img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
+.prog-item .prog-status {
+    margin-top: -5%;
+    font-style: italic;
+    opacity: 80%;
 }
+
+.prog-item .prog-desc {
+    margin-top:10px;
+    font-size: 25px;
+}
+
+
 
 
 
