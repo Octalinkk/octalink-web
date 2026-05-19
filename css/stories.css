@@ -121,25 +121,19 @@ footer {
 }
 
 .content {
+    font-size: 200%;
     background-color: #FFFFFF;
     padding: 10%;
 }
 
-.content .desc {
-    font-size: 150%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
 
-.content .count {
-    font-size: 150%;
+.content .desc {
     margin-top: 50px;
     margin-bottom: 50px;
-    display: inline-flex;
-    gap: 25px;
 }
 
 .gallery {
+    margin-top: 100px;
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -149,35 +143,67 @@ footer {
     height: auto;
 }
 
-.gallery .prog-item{
+.gallery .story-item{
     color: #eee;
     width: 700px;
-    height: 300px;
     background-color: #2d2a35;
     border-radius: 50px;
-    padding: 50px;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 3px 3px 3px #2d2a35;
 }
-.prog-item a{
+
+.story-item img{
+    margin-left: -5px;
+    margin-bottom: 50px;
+    justify-self: center;
+    width: 710px;
+}
+
+.story-item a{
     text-decoration: none;
     color: #eee;
 }
-.prog-item .prog-header {
+
+
+.story-item .story-header {
     font-size: 50px;
     margin: 0;
 }
-.prog-header .prog-title i{
+
+.story-item .story-header p{
+    margin-left: 50px;
+}
+
+.story-item .story-status {
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    margin-left: 50px;
+    gap: 10px;
+}
+
+.story-item .story-desc {
     font-size: 20px;
 }
 
-.prog-item .prog-status {
-    margin-top: -5%;
+.story-item .story-desc p{
+    text-align: center;
+    color: #eee;
+    margin: 50px;
     font-style: italic;
     opacity: 80%;
 }
 
-.prog-item .prog-desc {
-    margin-top:10px;
-    font-size: 25px;
+.story-item .story-desc button{
+    background-color: #4b4657;
+    color: black;
+}
+
+.story-item .story-desc .accordion-body{
+    background-color: #766d8a;
+    color: black;
 }
 
 
@@ -193,32 +219,37 @@ footer {
         font-size: 350%;
     }
 
-    .gallery .prog-item{
+    .gallery .story-item{
         width: 300px;
-        height: 200px;
-        border-radius: 10px;
-        padding: 10px;
+        border-radius: 20px;
     }
-    .prog-item a{
-        text-decoration: none;
-        color: #eee;
+
+    .story-item img{
+        margin-bottom: 30px;
+        width: 310px;
     }
-    .prog-item .prog-header {
-        font-size: 30px;
+
+
+    .story-item .story-header {
+        font-size: 40px;
         margin: 0;
     }
-    .prog-header .prog-title i{
-        font-size: 15px;
+
+    .story-item .story-header p{
+        margin-left: 20px;
     }
 
-    .prog-item .prog-status {
-        margin-top: -5%;
-        font-style: italic;
-        opacity: 80%;
+    .story-item .story-status {
+        margin-top: -10px;
+        margin-left: 20px;
+        gap: 5px;
     }
 
-    .prog-item .prog-desc {
-        margin-top:10px;
-        font-size: 15px;
+    .story-item .story-desc {
+        font-size: 20px;
+    }
+
+    .story-item .story-desc p{
+        margin: 20px;
     }
 }
