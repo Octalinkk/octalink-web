@@ -219,6 +219,10 @@ footer {
         font-size: 350%;
     }
 
+    .content {
+        font-size: 150%
+    }
+
     .gallery .story-item{
         width: 300px;
         border-radius: 20px;
