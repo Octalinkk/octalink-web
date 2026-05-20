@@ -1,0 +1,249 @@
+body {
+    background-color: #2d2a35;
+    background-image: url("./../res/main_bg.png"); 
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: fixed;
+    width: 100%;
+    background-blend-mode: exclusion darken;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 50px;
+    background-color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    font-style: italic;
+}
+
+.separator-bot {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.bot-wave-separator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.bot-wave-separator svg {
+    position: relative;
+    display: block;
+    width: calc(137% + 1.3px);
+    height: 90px;
+    transform: rotateY(180deg);
+}
+
+.bot-wave-separator .shape-fill {
+    fill: #FFFFFF;
+}
+
+.separator-top {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 100px;
+}
+
+
+.top-wave-separator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.top-wave-separator svg {
+    position: relative;
+    display: block;
+    width: calc(143% + 1.3px);
+    height: 176px;
+}
+
+.top-wave-separator .shape-fill {
+    fill: #FFFFFF;
+}
+
+.main-column {
+    padding: 0;
+}
+
+.center {
+    width: 100%;
+    text-align: center;    
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 140%;
+    text-shadow: 3px 3px 3px #2d2a35;
+}
+
+.subtitle {
+    font-size: 30px;
+    text-shadow: 3px 3px 3px #2d2a35;
+}
+
+.quote {
+    font-size: 100%;
+    font-style: italic;
+    opacity: 80%;
+}
+
+
+
+
+
+.title {
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: 700%;
+    border:2px soild #eee;
+    margin: 30px 30px;
+    text-shadow: 3px 3px 3px #8a8a8a;
+}
+
+.content {
+    font-size: 200%;
+    background-color: #FFFFFF;
+    padding: 10%;
+}
+
+
+.content .desc {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.gallery {
+    margin-top: 100px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.gallery .acc-item{
+    color: #eee;
+    width: 700px;
+    height: 100px;
+    background-color: #2d2a35;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 100px 50px;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 3px 3px 3px #2d2a35;
+}
+
+.acc-item .acc-title {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: calc(100% - 100px);
+    padding-left: 50px;
+}
+
+.acc-item .acc-title p{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.acc-item .acc-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.acc-logo img{
+    width: 150px;
+    height: 150px;
+    object-fit: scale-down;
+}
+
+
+
+
+
+
+@media (max-width: 990px){
+
+    .title h1 {
+        text-align: center;
+        justify-content: center;
+        font-size: 350%;
+    }
+
+    .content {
+        font-size: 150%
+    }
+
+    .gallery .acc-item{
+    color: #eee;
+    width: 300px;
+    height: 75px;
+    background-color: #2d2a35;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 75px 25px;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 3px 3px 3px #2d2a35;
+}
+
+.acc-item .acc-title {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 75px;
+    width: calc(100% - 100px);
+    padding-left: 30px;
+}
+
+.acc-item .acc-title p{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+}
+
+.acc-item .acc-logo {
+    width: 75px;
+    height: 75px;
+}
+
+.acc-logo img{
+    width: 100px;
+    height: 100px;
+    object-fit: scale-down;
+}
+}
